@@ -23,3 +23,9 @@ Symbol([1, 'a']) // description: '1,a'
 ```
 new Symbol() // Uncaught TypeError: Symbol is not a constructor
 ```
+
+## 属性
+
+**Symbol.asyncIterator**
+
+指定一个默认异步迭代器，可用于`for await...of`
