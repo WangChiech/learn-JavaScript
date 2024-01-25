@@ -39,9 +39,7 @@ console.log(fn.length) // 2
 **prototype**
 
 propertyDescriptors: 
-`{ value: fn, writable: false, enumerable: false, configurable: false }`
-
-`typeof Function.prototype // function`
+`{ value: f, writable: false, enumerable: false, configurable: false }`
 
 ```
 typeof Function.prototype // function

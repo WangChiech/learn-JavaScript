@@ -1,3 +1,36 @@
 <script>
   document.write('aa')
+  var s1 = 'global1'
+  let m1 = 'global__m1'
+  function fn1() {
+    setTimeout(function timer1() {
+      var t = 'timer'
+    })
+  }
+  fn1()
+  // console.log(s1, s2)
+</script>
+<script>
+  var s2 = 'global2'
+  let m2 = 'global__m2'
+  function fn2() {
+    setTimeout(function timer2() {
+      var t2 = 'timer'
+    })
+  }
+  fn2()
+  console.log(s1, s2)
+</script>
+<script type="module">
+var s3 = 'global3'
+  let m3 = 'global__m3'
+  function fn3() {
+    setTimeout(function timer3() {
+      console.log(m3)
+      var t3 = 'timer'
+
+    })
+  }
+  fn3()
+  console.log(s1, s2, s3, m3)
 </script>

@@ -27,11 +27,22 @@
 
 ## 原理
 
+[call stack](./doc/callStack.md)
+
 [事件循环](./doc/事件循环.md)
 
 [对象](./doc/对象.md)
 
 [数组](./doc/数组.md)
+
+## 函数式编程
+
+[函数式编程](./doc/函数式编程.md)
+
+
+## 工具
+
+[compiler explorer](https://godbolt.org/)
 
 ## 参考
 
