@@ -30,6 +30,8 @@
 
 [Function](./doc/Function.md)
 
+## 面向对象编程
+
 
 ## 原理
 
@@ -65,6 +67,8 @@
 ## 参考
 
 [es5](https://es5.github.io/#x8.7es5)
+
+[现代 JavaScript 教程](https://zh.javascript.info/)
 
 [【译】JavaScript 工作原理：V8 引擎中5个优化代码的技巧](https://lyn-ho.github.io/posts/4d26265b/)
 
