@@ -1,0 +1,7 @@
+console.log('--------js------', document.readyState)
+console.dir(document.querySelector('h1'))
+console.dir(document.querySelector('table'))
+// time = Date.now()
+// while((Date.now() - time) < 1000) console.log('test.js')
+alert('js-----')
+throw(111)

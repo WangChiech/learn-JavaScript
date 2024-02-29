@@ -2,16 +2,37 @@
 <html>
   <body>
     <h1>111</h1>
-    <h1>
-
-
-         111
-    </h1>
+    <script>
+      console.log(document.readyState)
+      document.addEventListener('readystatechange', (e) => {
+        console.dir(e)
+        console.log(document.readyState)
+      })
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('---DOMContentLoaded')
+      })
+      console.dir(document.querySelector('h1'))
+      console.dir(document.querySelector('table'))
+      prompt(11)
+    </script>
     <table>
       <tr>
         <td>11</td>
         <td>22</td>
       </tr>
     </table>
+    <script>
+      const s = document.createElement('script')
+      s.src = './test.js'
+      document.body.append(s)
+      s.onerror = (err) => console.log('js______loaderr', err) 
+      window.onerror = (err) => console.log('window-js______loaderr', err) 
+      alert('create script')
+
+// time = Date.now()
+// while((Date.now() - time) < 3000) console.log('test.js')
+    </script>
+    <!-- <script async src="./test.js"></script> -->
   </body>
 </html>
+
