@@ -45,6 +45,8 @@
 
 [浏览器渲染流程](./doc/浏览器渲染流程.md)
 
+[事件循环](./doc/事件循环.md)
+
 [JavaScript 引擎](./doc/JavaScript引擎.md)
 
 [内存管理与垃圾回收](./doc/内存管理与垃圾回收.md)
@@ -57,11 +59,11 @@
 
 [闭包](./doc/闭包.md)
 
-[事件循环](./doc/事件循环.md)
-
 [对象](./doc/对象.md)
 
 [数组](./doc/数组.md)
+
+[Performance 面板](./doc/Performance面板.md)
 
 
 
