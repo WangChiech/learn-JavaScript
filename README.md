@@ -63,6 +63,8 @@
 
 [数组](./doc/数组.md)
 
+[script 之 defer、async、module](script之defer、async、module.md)
+
 [Performance 面板](./doc/Performance面板.md)
 
 

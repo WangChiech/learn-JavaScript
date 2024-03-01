@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async src="./sync.js"></script>
+  </head>
+  <body>
+    <div id='con'>button</div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('DOMContentLoaded', document.readyState)
+      })
+      window.onload = () => console.log('window onload', document.readyState)
+      var a1 = 'var a value'
+      let a2 = 'let a value'
+      let time = Date.now()
+      while(Date.now() - time < 1000) {}
+      console.log(1)
+      {
+        var a3 = 'block var a3'
+        let a4 = 'block let a4'
+        {
+          let a5 = 'block blocl a5'
+          debugger
+        }
+        debugger
+      }
+      debugger
+      setTimeout(() => console.log('1 inner setTimeout'))
+      Promise.resolve('1 resolve').then(res => console.log(res))
+    </script>
+    <script type="module">
+      debugger
+      var module1 = 'var module1'
+      const module2 = 'const module2'
+    </script>
+    <script type="module">
+      debugger
+      var b1 = 'var b value'
+      let b2 = 'let b value'
+      const m = 'script'
+      import {} from './test.js'
+      import {} from './subtest1.js'
+      console.log(2)
+      setTimeout(() => console.log('2 inner setTimeout'))
+      Promise.resolve('2 resolve').then(res => console.log(res))
+    </script>
+    <script defer src="./defer.js"></script>
+    <script>
+      var c1 = 'var c value'
+      let c2 = 'let c value'
+      const btn = document.querySelector('#con')
+      btn.onclick = function () {
+        debugger
+      }
+      time = Date.now()
+      while(Date.now() - time < 1000) {}
+      console.log(3)
+    </script>
+    <h1>11</h1>
+  </body>
+</html>
+
