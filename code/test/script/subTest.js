@@ -1,3 +1,5 @@
+import exp from './importtest.js'
+console.log('subTest exp value', exp)
 var b5 = 'subTest var b5'
 let b6 = 'subTest let b6'
 const m = 'subTest'

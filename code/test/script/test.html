@@ -29,6 +29,10 @@
       Promise.resolve('1 resolve').then(res => console.log(res))
     </script>
     <script type="module">
+      import exp from './importtest.js'
+      console.log('module exp value', exp)
+      console.dir(import.meta)
+
       debugger
       var module1 = 'var module1'
       const module2 = 'const module2'
@@ -39,6 +43,8 @@
       let b2 = 'let b value'
       const m = 'script'
       import {} from './test.js'
+      import exp from './importtest.js'
+      console.log('2 exp value', exp)
       import {} from './subtest1.js'
       console.log(2)
       setTimeout(() => console.log('2 inner setTimeout'))
