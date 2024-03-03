@@ -38,6 +38,8 @@
 
 ## 手写实现
 
+[Promise 实现](./doc/Promise实现.md)
+
 [柯里化](./doc/柯里化.md)
 
 
