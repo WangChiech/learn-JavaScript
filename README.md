@@ -44,7 +44,7 @@
 
 ## DOM
 
-[Document](./doc/Document.md)
+[DOM](./doc/Document.md)
 
 
 ## 运行时环境
