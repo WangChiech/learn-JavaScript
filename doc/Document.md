@@ -1,24 +1,58 @@
-# Document
+# Node 节点
 
 文档对象模型(DOM, Document Object Model)是 HTML 和 XML 文档的编程接口，将其用**节点**构成的带层级结构的树表示。
 
-# Node 类型
+![](https://cdn.jsdelivr.net/gh/wangchiech/image_store/img/202403091135376.png)
+
+## 节点类型
+
+1. **Node.ELEMENT_NODE**
+2. Node.ATTRIBUTE_NODE
+3. **Node.TEXT_NODE**
+4. Node.CDATA_SECTION_NODE
+5. Node.ENTITY_REFERENCE_NODE
+6. Node.ENTITY_NODE
+7. Node.PROCESSING_INSTRUCTION_NODE
+8. **Node.COMMENT_NODE**
+9. **Node.DOCUMENT_NODE**
+10. Node.DOCUMENT_TYPE_NODE
+11. Node.DOCMENT_FRAGMENT_NODE
+12. Node.NOTATION_NODE
 
 `node.nodeName`
+
 `node.nodeType`
+
+`node.normalize()`
+
+`node.hasChildNodes()`
+
+### document
+
+
+## 操作节点
+### 查询节点
+
+**根据所有节点关系**
+
+![](https://cdn.jsdelivr.net/gh/wangchiech/image_store/img/202403091144890.png)
+
+**根据元素节点关系**
+
+![](https://cdn.jsdelivr.net/gh/wangchiech/image_store/img/202403091144718.png)
 
 ### 创建节点
 
 - `document.createElement(tag)`：用给定标签创建一个元素节点
 - `document.createTextNode(value)`：创建一个文本节点
 - `element.cloneNode(deep)`：克隆元素，deep => true/false
-- `parent.appendChild(node)`
 
 ### 插入节点
 - `node.append(...nodes or strings)`：在 node 最后一个子元素后插入
 - `node.prepend(...nodes or strings)`：在 node 第一个子元素前插入
 - `node.before(...nodes or strings)`：在 node 之前插入
 - `node.after(...nodes or strings)`：在 node 之后插入
+- `parent.appendChild(node)`
 - `parent.insertBefore(node, nextSibling)`
 
 ### 替换节点
@@ -27,7 +61,7 @@
 
 ### 移除节点
 - `node.remove()`：移除节点
-- `parent.replaceChild(node)`
+- `parent.removeChild(node)`
 
 ### `insertAdjacentHTML/Text/Element`
 - `element.insertAdjacentHTML(where, html)`
@@ -36,7 +70,8 @@
   - where => `beforeend`：将 html 插入到 element 最后一个子元素之后
   - where => `afterend`：将 html 插入到 element 之后
 
-### 样式
+
+## 样式
 
 `element.style` 是只读的对象
 
@@ -50,7 +85,7 @@
 
 返回只读对象
 
-### class
+## class
 
 `element.className`：返回 element 的类名集合组成的字符串
 
@@ -129,3 +164,17 @@ let scrollHeight = Math.max(
 `window.scrollBy(x, y)`：相对当前位置进行滚动 (x, y) 的距离
 
 `element.scrollIntoView(top)`：滚动到 element 可见(`top:true` element 与窗口顶部对齐，`top:false` element 与窗口底部对齐)
+
+### 坐标
+
+**相对于窗口**
+
+`element.getBoundingClientRect()`
+
+![](https://cdn.jsdelivr.net/gh/wangchiech/image_store/img/202403091437270.png)
+
+`document.elementFromPoint(x, y)`：获取窗口坐标 (x, y) 处元素
+
+**相对于文档**
+
+`element.getBoundingClientRect() + 当前页面滚动距离`

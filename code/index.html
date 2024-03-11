@@ -2,15 +2,17 @@
 <html>
   <head>
     <style>
-      #abc {
-        background-color: pink;
-      }
+      
     </style>
   </head>
   <body>
-    <div id="abc">abc</div>
+    <input value="abc value" id="abc" type="button" onclick="h()">
     <script>
-      console.dir(abc)
+      function h() {
+        console.dir(this)
+      }
+      abc.onclick = h
+      abc.addEventListener('click', h)
     </script>
   </body>
 </html>
