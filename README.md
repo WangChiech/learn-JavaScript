@@ -97,6 +97,26 @@
 
 [compiler explorer](https://godbolt.org/)
 
+[freecodecamp](https://www.freecodecamp.org/)
+
+[courses.wesbos.com](https://courses.wesbos.com/account)
+
+[codepen](https://codepen.io/challenges)
+
+[codewars](https://www.codewars.com/kata/latest/my-languages?beta=false)
+
+[edabit.com](https://edabit.com/challenges)
+
+[exercism](https://exercism.org/dashboard)
+
+[codingame](https://www.codingame.com/ide/puzzle/onboarding)
+
+[jskatas](https://jskatas.org/)
+
+[scrimba](https://scrimba.com/dashboard#overview)
+
+[cssbattle](https://cssbattle.dev/learn)
+
 ## 参考
 
 [es5](https://es5.github.io/#x8.7es5)

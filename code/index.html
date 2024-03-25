@@ -6,13 +6,32 @@
     </style>
   </head>
   <body>
-    <input value="abc value" id="abc" type="button" onclick="h()">
+    <input value="abc value" id="abc" type="button" onclick="console.log('abc')">
+    <div id="app">
+      <a id="btn" href="/abc">btn</a>
+    </div>
     <script>
-      function h() {
-        console.dir(this)
+      let event = new MouseEvent("click", {
+        bubbles: true,
+        cancelable: true,
+        clientX: 100,
+        clientY: 100
+      });
+
+      console.dir(event); // 100
+      btn.onclick = function(e) {
+        console.log(event.clientX, e.clientX)
+        console.dir(e)
+        abc.click()
+        console.dir(event)
+        console.log(event.clientX, e.clientX)
+        // e.preventDefault()
+        return false
       }
-      abc.onclick = h
-      abc.addEventListener('click', h)
+      // btn.addEventListener('click', function(e) {
+      //   console.log('eventListener: ', e.clientX)
+      //   return false
+      // })
     </script>
   </body>
 </html>
