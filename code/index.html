@@ -1,37 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      
-    </style>
-  </head>
+  <head></head>
   <body>
-    <input value="abc value" id="abc" type="button" onclick="console.log('abc')">
-    <div id="app">
-      <a id="btn" href="/abc">btn</a>
+    <div id="input">
+      <input value="val" id="a">
     </div>
-    <script>
-      let event = new MouseEvent("click", {
-        bubbles: true,
-        cancelable: true,
-        clientX: 100,
-        clientY: 100
-      });
-
-      console.dir(event); // 100
-      btn.onclick = function(e) {
-        console.log(event.clientX, e.clientX)
-        console.dir(e)
-        abc.click()
-        console.dir(event)
-        console.log(event.clientX, e.clientX)
-        // e.preventDefault()
-        return false
-      }
-      // btn.addEventListener('click', function(e) {
-      //   console.log('eventListener: ', e.clientX)
-      //   return false
-      // })
+    <div id="file">
+      <input type="file" id="b">
+    </div>
+    <script type="module">
+      var a = 1
+    </script>
+    <script type="module">
+      var aa = 2
     </script>
   </body>
-</html>
+  </html>
