@@ -77,18 +77,18 @@
 
 [对象之快慢属性](./doc/对象之快慢属性与隐藏类.md)
 
-[对象之内联缓存](./doc/对象之内联缓存.md)
 
 [数组](./doc/数组.md)
 
 [script 之 defer、async、module](script之defer、async、module.md)
 
-[Performance 面板](./doc/Performance面板.md)
 
+[对象之内联缓存](./doc/对象之内联缓存.md)
 ## 性能优化
 
 [](./doc/性能优化.md)
 
+[Performance 面板](./doc/Performance面板.md)
 ## 函数式编程
 
 [函数式编程](./doc/函数式编程.md)
