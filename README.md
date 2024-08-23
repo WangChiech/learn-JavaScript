@@ -123,7 +123,11 @@
 
 ## 参考
 
-[es5](https://es5.github.io/#x8.7es5)
+[ECMAScript 5.1-github](https://es5.github.io/#x8.7es5)
+
+[ECMA-262](https://www.ecma-international.org/wp-content/uploads/ECMA-262.pdf)
+
+[ES5-中文](https://www.ecma-international.org/wp-content/uploads/ECMA-262.pdf)
 
 [现代 JavaScript 教程](https://zh.javascript.info/)
 
