@@ -22,6 +22,8 @@
 
 [函数](./doc/函数.md)
 
+[模块](./doc/模块.md)
+
 ## JavaScript 机制与特性
 
 [类型转换](./doc/类型转换.md)
@@ -134,3 +136,5 @@
 [前端设计能力提升-gvfn](https://www.yuque.com/lpldplws/web/ugszzbc7q8hrpx4o?#)
 
 [web.dev](https://web.dev)
+
+[使用 JavaScript 来实现解释器和编译器系列教程](https://hsiaosiyuan0.gitbook.io/icj)
