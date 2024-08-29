@@ -41,17 +41,16 @@
     - 没有返回 `undefined`
     - index 为负数 => index + length
 - String.prototype.charAt：`charAt(index)`
-    - 返回 index 处**码元字符**
-    - 没有返回 `''`
-    = index => [0, len - 1]
+    - index 区间 [0, length - 1]
+    - 返回 index 处**码元字符**，没有返回 `''`
 - String.prototype.charCodeAt：`charCodeAt(index)`
     - 返回 index 处**码元值**
     - 没有返回 `NaN`
-    - index => [0, len - 1]
+    - index 区间 [0, len - 1]
 - String.prototype.codePointAt：`codePonitAt(index)` [MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt)
-    - 返回**码元index**处的**unicode码点**(index处为前导代理时)或**后尾代理码元**（index处为后尾代理时）
-    - 没有返回 `undefined`
-    - index => [0, len - 1]
+    - index 区间 [0, len - 1]
+    - 返回**码元index**处的**unicode码点**(index处为前导代理时)或**后尾代理码元**（index处为后尾代理时），没有返回 `undefined`
+    - index 为 UTF16 码元的索引
 
 #### 在字符串中获取的一部分
 - String.prototype.substring：`substring(indexStart[, indexEnd])`
