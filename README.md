@@ -40,6 +40,8 @@
 
 [BigInt](./doc/BigInt.md)
 
+[Boolean](./doc/Boolean.md)
+
 [Symbol](./doc/Symbol.md)
 
 [Object](./doc/Object.md)
