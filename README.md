@@ -34,9 +34,11 @@
 
 ## 内置对象
 
+[String](./doc/String.md)
+
 [Number](./doc/Number.md)
 
-[String](./doc/String.md)
+[BigInt](./doc/BigInt.md)
 
 [Symbol](./doc/Symbol.md)
 
